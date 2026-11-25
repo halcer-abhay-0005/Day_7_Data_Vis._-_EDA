@@ -3,7 +3,7 @@
 - **Developer:** Abhay Gour
 - **Assignment:** Day 07 - Data Visualization and EDA
 - **Date:** 2026-11-25
-- **Repository URL:** 
+- **Repository URL:** https://github.com/halcer-abhay-0005/Day_7_Data_Vis._-_EDA.git
 - **Latest commit hash:** `d49a45d`
 - **Pull Request:** N/A — no pull request created
 
