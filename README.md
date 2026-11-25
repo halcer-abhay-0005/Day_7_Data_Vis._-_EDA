@@ -19,9 +19,15 @@ python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 .venv/bin/python src/eda.py              # regenerates outputs/
 .venv/bin/python src/eda.py --data other.csv --out outputs_other   # optional
-.venv/bin/python -m pytest -q            # 8 tests
+.venv/bin/python -m pytest -q            # 26 tests
 ```
 Required CSV columns: ticket_id, priority, category, resolution_time_hours, created_at, status.
+
+## Input validation (hardening from earlier code reviews)
+- Strict `csv` parsing (newline-preserving); header checked before pandas can rename duplicates.
+- File-level errors raise `TicketDataError`: empty file, header only, missing columns, duplicate headers (also after trim/case normalisation), rows with the wrong field count, malformed quotes.
+- Row-level problems go to `outputs/rejected_rows.csv` with a reason: blank/duplicate ticket_id, unknown priority, blank category, non-numeric / inf / nan / negative resolution time, bad date. A *blank* resolution time is kept as genuinely missing, which is different from an invalid value.
+- The script refuses to run if `--data` points at one of its own output files.
 
 ## Assumptions
 - Blank `resolution_time_hours` means the ticket is unresolved (true for both in this data).
