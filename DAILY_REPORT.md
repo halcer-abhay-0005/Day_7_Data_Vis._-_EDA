@@ -4,7 +4,7 @@
 - **Assignment:** Day 07 - Data Visualization and EDA
 - **Date:** 2026-11-25
 - **Repository URL:** https://github.com/halcer-abhay-0005/Day_7_Data_Vis._-_EDA.git
-- **Latest commit hash:** `1d8406b` (input-validation hardening; later commits only edit this report)
+- **Latest commit hash:** `fdcae63` 
 - **Pull Request:** N/A — no pull request created
 
 - **Topics learned:** Matplotlib figure/axes, seaborn count/hist/box/heatmap, univariate/bivariate EDA, missingness, chart integrity.
