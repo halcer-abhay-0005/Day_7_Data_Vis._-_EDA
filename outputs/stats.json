@@ -1,0 +1,88 @@
+{
+  "n_rows": 20,
+  "n_missing_resolution": 2,
+  "missing_rows_status": {
+    "Open": 2
+  },
+  "missing_rows_priority": {
+    "Low": 1,
+    "High": 1
+  },
+  "mean_hours": 7.97,
+  "median_hours": 7.25,
+  "std_hours": 4.73,
+  "iqr_fences": [
+    -5.12,
+    20.88
+  ],
+  "iqr_outliers": [],
+  "spearman_priority_vs_time": {
+    "rho": 0.958,
+    "p": 0.0,
+    "n": 18,
+    "note": "priority coded Critical=0..Low=3; association only, not causation"
+  },
+  "by_priority": [
+    {
+      "priority": "Critical",
+      "count": 4,
+      "mean": 2.25,
+      "median": 2.25,
+      "min": 1.5,
+      "max": 3.0
+    },
+    {
+      "priority": "High",
+      "count": 5,
+      "mean": 5.9,
+      "median": 6.0,
+      "min": 4.5,
+      "max": 7.5
+    },
+    {
+      "priority": "Medium",
+      "count": 5,
+      "mean": 9.2,
+      "median": 9.0,
+      "min": 7.0,
+      "max": 11.5
+    },
+    {
+      "priority": "Low",
+      "count": 4,
+      "mean": 14.75,
+      "median": 14.5,
+      "min": 12.0,
+      "max": 18.0
+    }
+  ],
+  "by_category": [
+    {
+      "category": "Billing",
+      "count": 6,
+      "mean": 7.58,
+      "median": 6.25
+    },
+    {
+      "category": "General",
+      "count": 4,
+      "mean": 10.75,
+      "median": 11.0
+    },
+    {
+      "category": "Technical",
+      "count": 8,
+      "mean": 6.88,
+      "median": 6.25
+    }
+  ],
+  "category_share": {
+    "Technical": 0.45,
+    "Billing": 0.3,
+    "General": 0.25
+  },
+  "status_share": {
+    "Resolved": 0.9,
+    "Open": 0.1
+  }
+}

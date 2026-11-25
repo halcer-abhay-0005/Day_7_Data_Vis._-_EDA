@@ -1,0 +1,40 @@
+Rows: 20   Columns: 6
+
+Schema / missingness / unique
+  ticket_id               str           missing=0 (0%)  unique=20
+  priority                category      missing=0 (0%)  unique=4
+  category                str           missing=0 (0%)  unique=3
+  resolution_time_hours   float64       missing=2 (10%)  unique=18
+  created_at              datetime64[us]missing=0 (0%)  unique=10
+  status                  str           missing=0 (0%)  unique=2
+
+Numeric summary (resolution_time_hours):
+count    18.00
+mean      7.97
+std       4.73
+min       1.50
+25%       4.62
+50%       7.25
+75%      11.12
+max      18.00
+
+Counts: priority
+priority
+High        6
+Medium      5
+Low         5
+Critical    4
+
+Counts: category
+category
+Technical    9
+Billing      6
+General      5
+
+Counts: status
+status
+Resolved    18
+Open         2
+
+Duplicate ticket_ids: 0
+Date range: 2026-11-01 to 2026-11-10
