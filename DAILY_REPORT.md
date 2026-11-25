@@ -1,4 +1,12 @@
-# Day 07 Daily Report
+# Day 07 Daily Report - Data Visualization and EDA
+
+- **Developer:** Abhay Gour
+- **Assignment:** Day 07 - Data Visualization and EDA
+- **Date:** 2026-11-25
+- **Repository URL:** 
+- **Latest commit hash:** `d49a45d`
+- **Pull Request:** N/A — no pull request created
+
 - **Topics learned:** Matplotlib figure/axes, seaborn count/hist/box/heatmap, univariate/bivariate EDA, missingness, chart integrity.
 - **What I can explain without notes:** when to use box plots, why correlation misleads, why missing resolution time is informative, how to describe an outlier simply.
 - **Implementation completed:** `src/eda.py` (profile, stats, 6 plots), tests, `EDA_REPORT.md` with 7 findings and caveats, README.
